@@ -1,650 +1,634 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Antivirus AI - Virus Cleaner | Double Strength Protection + Ads</title>
-  <!-- Google Fonts: Modern & Clean -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Font Awesome 6 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Adssterra Ad Codes - integrated as per requirement -->
-  <script async="async" data-cfasync="false" src="https://pl29092313.profitablecpmratenetwork.com/e65fd84dde92fdb820f245dd7b14f35c/invoke.js"></script>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: radial-gradient(circle at 20% 30%, #0a0c15, #03050b);
-      color: #ffffff;
-      line-height: 1.5;
-      scroll-behavior: smooth;
-    }
-
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 1.5rem 2rem;
-    }
-
-    /* glassmorphic elements */
-    .glass-card {
-      background: rgba(18, 25, 45, 0.6);
-      backdrop-filter: blur(12px);
-      border-radius: 2rem;
-      border: 1px solid rgba(0, 255, 255, 0.2);
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-    }
-
-    /* hero section */
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 2.5rem;
-      margin: 2rem 0 3rem 0;
-    }
-    .hero-left {
-      flex: 1.2;
-    }
-    .hero-right {
-      flex: 0.9;
-      display: flex;
-      justify-content: center;
-    }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(0, 255, 255, 0.15);
-      padding: 0.4rem 1.2rem;
-      border-radius: 40px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      border: 1px solid rgba(0, 255, 255, 0.5);
-      margin-bottom: 1.5rem;
-    }
-    .badge i {
-      color: #0ff;
-    }
-    h1 {
-      font-size: 3.2rem;
-      font-weight: 800;
-      line-height: 1.2;
-      background: linear-gradient(135deg, #FFFFFF, #00e0ff, #7c3aed);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      margin-bottom: 1rem;
-    }
-    .double-strength {
-      display: inline-block;
-      background: linear-gradient(95deg, #ff4d4d, #ffaa00);
-      padding: 0.2rem 1rem;
-      border-radius: 40px;
-      font-size: 0.9rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-    }
-    .hero-description {
-      font-size: 1.1rem;
-      color: #cbd5f0;
-      margin-bottom: 1.8rem;
-    }
-    .stats-row {
-      display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      margin: 1.5rem 0;
-    }
-    .stat-item {
-      background: rgba(0, 0, 0, 0.4);
-      border-radius: 1.5rem;
-      padding: 0.5rem 1rem;
-      text-align: center;
-      min-width: 90px;
-    }
-    .stat-number {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: #0ff;
-    }
-    .install-btn {
-      background: linear-gradient(105deg, #0ff, #2563eb);
-      border: none;
-      padding: 1rem 2.5rem;
-      border-radius: 60px;
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #0a0c15;
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 8px 20px rgba(0, 255, 255, 0.3);
-      margin-top: 0.5rem;
-    }
-    .install-btn i {
-      font-size: 1.3rem;
-    }
-    .install-btn:hover {
-      transform: scale(1.02);
-      background: linear-gradient(105deg, #00e0ff, #1e40af);
-      box-shadow: 0 0 18px #0ff;
-    }
-    .rating {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-top: 1.2rem;
-      font-size: 0.9rem;
-    }
-    .stars i {
-      color: #fbbf24;
-    }
-
-    /* screenshot mock area */
-    .phone-screenshot {
-      background: #0f1322;
-      border-radius: 2.5rem;
-      padding: 1rem;
-      border: 2px solid rgba(0, 255, 255, 0.4);
-      box-shadow: 0 30px 40px rgba(0,0,0,0.5);
-      max-width: 320px;
-      transition: 0.3s;
-    }
-    .phone-screenshot img {
-      width: 100%;
-      border-radius: 1.8rem;
-      display: block;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    }
-    .screenshot-label {
-      text-align: center;
-      margin-top: 0.7rem;
-      font-size: 0.8rem;
-      color: #8a9bdf;
-    }
-
-    /* features */
-    .section-title {
-      text-align: center;
-      font-size: 2.2rem;
-      font-weight: 700;
-      margin: 3rem 0 1.5rem;
-      background: linear-gradient(145deg, #eef2ff, #0ff);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-    }
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.8rem;
-      margin: 2rem 0;
-    }
-    .feature-card {
-      background: rgba(12, 18, 32, 0.7);
-      backdrop-filter: blur(8px);
-      border-radius: 1.8rem;
-      padding: 1.8rem;
-      transition: 0.25s;
-      border: 1px solid rgba(0, 255, 255, 0.2);
-    }
-    .feature-card:hover {
-      border-color: #0ff;
-      transform: translateY(-5px);
-      background: rgba(20, 30, 55, 0.8);
-    }
-    .feature-icon {
-      font-size: 2.4rem;
-      color: #0ff;
-      margin-bottom: 1rem;
-    }
-    .feature-card h3 {
-      font-size: 1.4rem;
-      margin-bottom: 0.6rem;
-    }
-    .feature-card p {
-      color: #b9c3da;
-    }
-
-    /* double strength banner */
-    .double-banner {
-      background: linear-gradient(125deg, #0a0f1e, #07112b);
-      border-radius: 2rem;
-      padding: 2rem;
-      margin: 2rem 0;
-      border-left: 6px solid #0ff;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .double-text h2 {
-      font-size: 1.8rem;
-      margin-bottom: 0.3rem;
-    }
-    .double-text p {
-      color: #b9d0ff;
-    }
-    .pill {
-      background: #0ff22d33;
-      padding: 0.5rem 1.2rem;
-      border-radius: 40px;
-      font-weight: bold;
-    }
-
-    /* detailed info section */
-    .info-section {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin: 3rem 0;
-      background: rgba(0, 0, 0, 0.3);
-      border-radius: 2rem;
-      padding: 2rem;
-    }
-    .info-left {
-      flex: 1.5;
-    }
-    .info-left h3 {
-      font-size: 1.7rem;
-      margin-bottom: 1rem;
-    }
-    .info-left ul {
-      list-style: none;
-    }
-    .info-left li {
-      margin-bottom: 0.8rem;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .info-left li i {
-      color: #0ff;
-      width: 24px;
-    }
-    .info-right {
-      flex: 1;
-      background: rgba(0, 255, 255, 0.05);
-      border-radius: 1.5rem;
-      padding: 1.2rem;
-      text-align: center;
-    }
-
-    .cta-footer {
-      text-align: center;
-      background: rgba(0, 255, 255, 0.05);
-      border-radius: 2rem;
-      padding: 2.5rem;
-      margin: 2rem 0;
-    }
-    .small-install {
-      background: white;
-      color: #0a0c15;
-      padding: 0.8rem 2rem;
-      border-radius: 60px;
-      font-weight: bold;
-      border: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      cursor: pointer;
-      margin-top: 1rem;
-      font-size: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 0 1rem;
-      font-size: 0.8rem;
-      color: #6c7a91;
-      border-top: 1px solid rgba(0, 255, 255, 0.2);
-    }
-    .toast-msg {
-      position: fixed;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #0f172ad9;
-      backdrop-filter: blur(12px);
-      padding: 12px 28px;
-      border-radius: 60px;
-      color: white;
-      font-weight: 500;
-      z-index: 1000;
-      border-left: 4px solid #0ff;
-      transition: 0.2s;
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    /* Ad container styling - placed prominently at top and between sections */
-    .ad-top-container {
-      background: rgba(0, 0, 0, 0.5);
-      border-radius: 1.5rem;
-      margin: 0 0 1.5rem 0;
-      padding: 1rem;
-      text-align: center;
-      backdrop-filter: blur(4px);
-      border: 1px solid rgba(0, 255, 255, 0.2);
-    }
-    .ad-section {
-      margin: 2rem 0;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.4);
-      border-radius: 1.5rem;
-      padding: 1rem;
-    }
-    .ad-label {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #5f7f9e;
-      margin-bottom: 0.5rem;
-    }
-    .responsive-ad-wrap {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    @media (max-width: 700px) {
-      h1 { font-size: 2.2rem; }
-      .container { padding: 1rem; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Earn For Earn - Live App Statistics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        }
+        
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: #111111;
+            --text-primary: #ffffff;
+            --text-secondary: #aaaaaa;
+            --border: #222222;
+            --purple: #8a2be2;
+            --purple-dark: #6a0dad;
+            --blue: #2b6de2;
+            --green: #00C851;
+            --orange: #FF8C00;
+            --gold: #FFD700;
+        }
+        
+        body {
+            background: radial-gradient(circle at 20% 30%, #0a0c15, #03050b);
+            color: var(--text-primary);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: var(--bg-primary);
+            min-height: 100vh;
+            box-shadow: 0 0 30px rgba(0,0,0,0.5);
+        }
+        
+        /* Top Ad Banner - Sobar opre (All ads on top) */
+        .top-ad-section {
+            background: rgba(0,0,0,0.6);
+            padding: 15px 12px;
+            text-align: center;
+            border-bottom: 2px solid var(--purple);
+        }
+        
+        .ad-label {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        
+        .ad-label i {
+            color: var(--orange);
+        }
+        
+        .ad-divider {
+            margin: 12px 0;
+            border-top: 1px dashed rgba(255,255,255,0.1);
+        }
+        
+        .ad-container {
+            min-height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+            padding: 25px 20px;
+            text-align: center;
+        }
+        
+        .app-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 2rem;
+            backdrop-filter: blur(5px);
+        }
+        
+        .app-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        
+        .app-subtitle {
+            font-size: 0.8rem;
+            opacity: 0.85;
+            margin-top: 5px;
+        }
+        
+        .live-badge {
+            display: inline-block;
+            background: #ff4444;
+            font-size: 0.7rem;
+            padding: 3px 10px;
+            border-radius: 30px;
+            margin-left: 8px;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+        
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+        
+        .stat-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 20px 15px;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--purple);
+        }
+        
+        .stat-icon {
+            font-size: 2rem;
+            color: var(--purple);
+            margin-bottom: 12px;
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff, var(--purple));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 8px;
+        }
+        
+        /* Info Section */
+        .info-section {
+            background: var(--bg-card);
+            margin: 20px;
+            border-radius: 20px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        
+        .info-title {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--purple);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        
+        .info-key {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .info-value {
+            font-weight: 600;
+            color: white;
+        }
+        
+        /* Refresh button */
+        .refresh-stats {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            padding: 6px 14px;
+            color: var(--text-secondary);
+            font-size: 0.7rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-left: 10px;
+            transition: all 0.2s;
+        }
+        
+        .refresh-stats:hover {
+            color: white;
+            border-color: var(--purple);
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border);
+            margin-top: 10px;
+        }
+        
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--border);
+            border-top-color: var(--purple);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .timestamp {
+            text-align: center;
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            margin: 10px 20px;
+        }
+    </style>
 </head>
 <body>
-
-<div class="container">
-  
-  <!-- ========== ADSSTERRA AD SECTION - TOP (Sobar opre ay ads holo thakbe) ========== -->
-  <div class="ad-top-container">
-    <div class="ad-label"><i class="fas fa-ad"></i> Sponsored Ad</div>
-    <!-- First Adssterra ad unit: invoke container -->
-    <div id="container-e65fd84dde92fdb820f245dd7b14f35c"></div>
-    <!-- Second ad script: highperformanceformat iframe ad -->
-    <div class="responsive-ad-wrap" style="margin-top: 12px;">
-      <script>
-        atOptions = {
-          'key' : '3a8ec44a8a50de169a61c179c234394f',
-          'format' : 'iframe',
-          'height' : 50,
-          'width' : 320,
-          'params' : {}
-        };
-      </script>
-      <script src="https://www.highperformanceformat.com/3a8ec44a8a50de169a61c179c234394f/invoke.js"></script>
-    </div>
-    <!-- Additional Adssterra script (as given) -->
-    <script src="https://pl29092314.profitablecpmratenetwork.com/4b/4b/8c/4b4b8c4b394def3d133a8c7aa2ad983e.js"></script>
-  </div>
-
-  <!-- Hero Section -->
-  <div class="hero">
-    <div class="hero-left">
-      <div class="badge">
-        <i class="fas fa-shield-virus"></i> <span>AI-Powered · Real-time</span>
-      </div>
-      <h1>Antivirus AI <br> Virus Cleaner</h1>
-      <div class="double-strength">
-        <i class="fas fa-bolt"></i> DOUBLE STRENGTH <i class="fas fa-bolt"></i>
-      </div>
-      <p class="hero-description">
-        Next‑gen malware protection + intelligent cleaner. <strong>AI dual‑engine</strong> detects 99.9% of threats in real time. Keep your device safe, fast & private.
-      </p>
-      <div class="stats-row">
-        <div class="stat-item"><span class="stat-number">1M+</span><br>Downloads</div>
-        <div class="stat-item"><span class="stat-number">4.4★</span><br>28.7K reviews</div>
-        <div class="stat-item"><span class="stat-number">#1</span><br>AI Security</div>
-      </div>
-      <!-- INSTALL BUTTON - redirects to your link -->
-      <button class="install-btn" id="mainInstallBtn">
-        <i class="fas fa-download"></i> Install
-      </button>
-      <div class="rating">
-        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-        <span>4.4 · 28.7K reviews</span>
-        <span><i class="fas fa-family"></i> Family Library</span>
-      </div>
-      <p style="font-size:0.75rem; margin-top: 12px;"><i class="fas fa-check-circle" style="color:#0ff;"></i> In-app purchase · Free trial · Everyone</p>
-    </div>
-    <div class="hero-right">
-      <div class="phone-screenshot">
-        <!-- App screenshot visual (custom design) -->
-        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 800'%3E%3Crect width='400' height='800' fill='%230b1120'/%3E%3Ccircle cx='200' cy='100' r='40' fill='%2300ccff' opacity='0.8'/%3E%3Ctext x='80' y='180' fill='white' font-size='20' font-weight='bold'%3EAntivirus AI%3C/text%3E%3Crect x='40' y='220' width='320' height='100' rx='20' fill='%231e2a44'/%3E%3Ctext x='70' y='265' fill='%2300ffcc' font-size='18'%3E✓ Real-time protection%3C/text%3E%3Crect x='40' y='350' width='320' height='100' rx='20' fill='%231e2a44'/%3E%3Ctext x='70' y='395' fill='%23ffaa44' font-size='18'%3E⚡ Virus Cleaner%3C/text%3E%3Crect x='40' y='480' width='320' height='100' rx='20' fill='%231e2a44'/%3E%3Ctext x='70' y='525' fill='%23aaffdd' font-size='18'%3E🤖 AI Deep Scan%3C/text%3E%3Crect x='100' y='630' width='200' height='50' rx='30' fill='%2300ffcc'/%3E%3Ctext x='150' y='662' fill='black' font-size='18' font-weight='bold'%3EINSTALL%3C/text%3E%3C/svg%3E"
-             alt="Antivirus AI App Screenshot"
-             style="width:100%; border-radius: 1.8rem; background:#0b1120;">
-        <div class="screenshot-label">
-          <i class="fas fa-mobile-alt"></i> Antivirus AI - Virus Cleaner • AI Interface
+    <div class="container">
+        <!-- ========== TOP AD SECTION - ALL ADS ON TOP (SOBAR OPRE) ========== -->
+        <div class="top-ad-section">
+            <div class="ad-label"><i class="fas fa-ad"></i> Sponsored Advertisement</div>
+            
+            <!-- AD 1: Adssterra - pl29092313 with container -->
+            <div class="ad-container">
+                <div id="container-e65fd84dde92fdb820f245dd7b14f35c"></div>
+            </div>
+            
+            <div class="ad-divider"></div>
+            
+            <!-- AD 2: Adssterra - pl29092314 -->
+            <div class="ad-container" id="adssterraAd2"></div>
+            
+            <div class="ad-divider"></div>
+            
+            <!-- AD 3 & 4: HighPerformanceFormat (iframe) -->
+            <div class="ad-container" id="highperfAd"></div>
+            
+            <div class="ad-divider"></div>
+            
+            <!-- AD 5: Adssterra - pl29095433 -->
+            <div class="ad-container" id="adssterraAd3"></div>
+            
+            <div class="ad-divider"></div>
+            
+            <!-- AD 6: Direct Link (profitaleCPMNetwork popunder) -->
+            <div class="ad-container">
+                <a href="https://www.profitablecpmratenetwork.com/phjnu00k40?key=54b7f8e8291e1e77045e3d8567bec993" target="_blank" style="color: var(--orange); font-size: 0.8rem; text-decoration: none; background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 30px; display: inline-block;">
+                    <i class="fas fa-external-link-alt"></i> Advertisement Link
+                </a>
+            </div>
         </div>
-      </div>
+        
+        <!-- Header / App Info -->
+        <div class="header">
+            <div class="app-icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="app-title">
+                Earn For Earn
+                <span class="live-badge">LIVE</span>
+            </div>
+            <div class="app-subtitle">Real-time App Statistics Dashboard</div>
+        </div>
+        
+        <!-- Stats Grid - App Statistics (No total paid amount anywhere) -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-users"></i></div>
+                <div class="stat-value" id="totalUsers">--</div>
+                <div class="stat-label">Total Users</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-user-friends"></i></div>
+                <div class="stat-value" id="totalReferrals">--</div>
+                <div class="stat-label">Total Referrals</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-tasks"></i></div>
+                <div class="stat-value" id="totalTasks">--</div>
+                <div class="stat-label">Tasks Completed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-gamepad"></i></div>
+                <div class="stat-value" id="totalGameSubmissions">--</div>
+                <div class="stat-label">Game Submissions</div>
+            </div>
+        </div>
+        
+        <!-- Detailed Statistics Section -->
+        <div class="info-section">
+            <div class="info-title">
+                <i class="fas fa-chart-simple"></i> Detailed Statistics
+                <div class="refresh-stats" id="refreshBtn">
+                    <i class="fas fa-sync-alt"></i> Refresh
+                </div>
+            </div>
+            <div class="info-item">
+                <span class="info-key"><i class="fas fa-calendar"></i> Last Updated</span>
+                <span class="info-value" id="lastUpdated">Loading...</span>
+            </div>
+            <div class="info-item">
+                <span class="info-key"><i class="fas fa-wallet"></i> Withdrawal Requests</span>
+                <span class="info-value" id="totalWithdrawals">--</span>
+            </div>
+            <div class="info-item">
+                <span class="info-key"><i class="fas fa-check-circle"></i> Approved Withdrawals</span>
+                <span class="info-value" id="approvedWithdrawals">--</span>
+            </div>
+            <div class="info-item">
+                <span class="info-key"><i class="fas fa-clock"></i> Pending Game Verifications</span>
+                <span class="info-value" id="pendingGameTasks">--</span>
+            </div>
+            <div class="info-item">
+                <span class="info-key"><i class="fas fa-chart-line"></i> Active Users (Last 7 days)</span>
+                <span class="info-value" id="activeUsers">--</span>
+            </div>
+            <div class="info-item">
+                <span class="info-key"><i class="fas fa-trophy"></i> Total Game Rewards Given</span>
+                <span class="info-value" id="totalGameRewards">--</span>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p><i class="fas fa-shield-alt"></i> Secure • Real-time Firebase Data</p>
+            <p style="margin-top: 8px;">© 2026 Earn For Earn • All statistics are live from database</p>
+            <p style="margin-top: 5px; font-size: 0.65rem;">No payment information displayed • Public dashboard</p>
+        </div>
     </div>
-  </div>
-
-  <!-- Double strength feature highlight -->
-  <div class="double-banner">
-    <div class="double-text">
-      <h2><i class="fas fa-dice-d6"></i> DOUBLE STRENGTH PROTECTION</h2>
-      <p>AI + heuristic dual-engine blocks malware, spyware, ransomware before it harms.</p>
-    </div>
-    <div class="pill">
-      <i class="fas fa-microchip"></i> AI Guardian Active
-    </div>
-  </div>
-
-  <!-- Feature Grid -->
-  <h2 class="section-title">Advanced Security Arsenal</h2>
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon"><i class="fas fa-bug"></i></div>
-      <h3>Malware Protection</h3>
-      <p>Real-time scanning + cloud-based threat intelligence. Blocks 500k+ malware variants.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon"><i class="fas fa-brain"></i></div>
-      <h3>Artificial Intelligence</h3>
-      <p>Self-learning AI predicts zero-day threats & adapts to new viruses instantly.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon"><i class="fas fa-broom"></i></div>
-      <h3>Smart Cleaner</h3>
-      <p>Junk files, cache & duplicate remover. Boost performance and free up storage.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
-      <h3>Privacy Guard</h3>
-      <p>App lock, Wi-Fi security & data breach alerts. Total anonymity control.</p>
-    </div>
-  </div>
-
-  <!-- Inline Ad Section - Mid page ads (Extra visibility for Adssterra) -->
-  <div class="ad-section">
-    <div class="ad-label"><i class="fas fa-bullhorn"></i> Advertisement</div>
-    <!-- Re-using the highperformanceformat ad to ensure multiple ad placements -->
-    <div class="responsive-ad-wrap">
-      <script>
-        (function() {
-          // second instance of same ad slot for more impressions (safe)
-          if (typeof window.adsLoaded === 'undefined') {
-            window.adsLoaded = true;
-            var adScript = document.createElement('script');
-            adScript.src = "https://www.highperformanceformat.com/3a8ec44a8a50de169a61c179c234394f/invoke.js";
-            document.currentScript.parentNode.appendChild(adScript);
-          }
-        })();
-      </script>
-    </div>
-    <!-- Additional text ad style to maintain Adssterra presence -->
-    <div style="font-size:12px; margin-top:6px; color:#88aaff;">Ads by Adssterra - Double Strength Ad Network</div>
-  </div>
-
-  <!-- Detailed info + stats -->
-  <div class="info-section">
-    <div class="info-left">
-      <h3><i class="fas fa-info-circle"></i> Why Antivirus AI?</h3>
-      <ul>
-        <li><i class="fas fa-check-double"></i> <strong>1M+ Downloads</strong> – Trusted by millions worldwide</li>
-        <li><i class="fas fa-chart-line"></i> <strong>99.7% detection rate</strong> – independent AV-Test results</li>
-        <li><i class="fas fa-cloud-upload-alt"></i> <strong>Cloud AI database</strong> – updates every 2 hours</li>
-        <li><i class="fas fa-battery-full"></i> <strong>Ultra-low battery use</strong> – optimized background scans</li>
-        <li><i class="fas fa-hand-holding-heart"></i> <strong>Family Library support</strong> – share protection with 5 members</li>
-        <li><i class="fas fa-file-alt"></i> <strong>In-app purchase</strong> – premium: VPN, identity theft monitoring</li>
-      </ul>
-    </div>
-    <div class="info-right">
-      <i class="fas fa-shield-alt" style="font-size: 3rem; color:#0ff;"></i>
-      <h3 style="margin: 1rem 0;">"Double Strength"</h3>
-      <p>Two independent antivirus engines: <strong>AI Neural Core + Signature Database</strong> for complete device immunity.</p>
-      <div style="margin: 1rem 0; font-size: 0.9rem;">
-        <i class="fas fa-star" style="color:gold;"></i> 4.4 ★ from 28.7K reviews<br>
-        <span style="background:#0ff22d; padding: 2px 8px; border-radius: 20px;">#1 Antivirus for Android</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Additional Ad Unit right after info section for maximum visibility -->
-  <div class="ad-section">
-    <div class="ad-label"><i class="fas fa-chart-simple"></i> Sponsored Content</div>
-    <!-- Invoking the first container again? Note: container ID already used once, but we can embed another generic ad from Adssterra network via script duplication for safe ad display -->
-    <div style="min-height: 90px; display: flex; justify-content: center;">
-      <div id="container-extra-ad"></div>
-      <script>
-        (function() {
-          if (!document.getElementById('container-extra-ad').innerHTML.trim()) {
-            var invokeScript = document.createElement('script');
-            invokeScript.src = "https://pl29092313.profitablecpmratenetwork.com/e65fd84dde92fdb820f245dd7b14f35c/invoke.js";
-            invokeScript.async = true;
-            document.getElementById('container-extra-ad').appendChild(invokeScript);
-          }
-        })();
-      </script>
-    </div>
-    <div style="margin-top: 8px;"><i class="fas fa-ad"></i> Your ad here - Trusted by 10k+ publishers</div>
-  </div>
-
-  <!-- CTA with share / wishlist / trailer -->
-  <div class="cta-footer">
-    <h3>Ready to secure your digital life?</h3>
-    <p>Join 1 million+ smart users. <strong>Free download</strong> — premium features available.</p>
-    <button class="small-install" id="secondaryInstallBtn">
-      <i class="fas fa-download"></i> Install Now
-    </button>
-    <div style="margin-top: 20px; display: flex; justify-content: center; gap: 25px; flex-wrap: wrap;">
-      <span style="cursor:pointer;" id="shareBtn"><i class="fas fa-share-alt"></i> Share</span>
-      <span style="cursor:pointer;" id="wishlistBtn"><i class="fas fa-heart"></i> Add to wishlist</span>
-      <span style="cursor:pointer;" id="trailerBtn"><i class="fas fa-play-circle"></i> Trailer</span>
-    </div>
-    <p style="margin-top: 16px; font-size:0.8rem;"><i class="fas fa-users"></i> You can share this with your family. <a href="#" id="familyLink" style="color:#0ff;">Learn more about Family Library</a></p>
-  </div>
-
-  <footer>
-    <p><i class="far fa-copyright"></i> 2026 Protectstar Inc. — Antivirus AI - Virus Cleaner. All rights reserved.</p>
-    <p>In-app purchases available. "Double Strength" AI technology patent pending.</p>
-    <p><i class="fas fa-ad"></i> This page includes ads from Adssterra network for better user experience.</p>
-  </footer>
-</div>
-
-<div id="installToast" class="toast-msg">
-  <i class="fas fa-check-circle"></i> Redirecting to secure download...
-</div>
-
-<script>
-  // === INSTALL REDIRECT LINK ===
-  // When any Install button is clicked, redirect to your specified URL
-  const INSTALL_URL = "https://singingfiles.com/show.php?l=0&u=2504837&id=73972";
-
-  // Function to handle install click - redirect immediately
-  function redirectToInstall() {
-    // Show toast message for feedback
-    const toast = document.getElementById('installToast');
-    toast.style.opacity = '1';
-    toast.innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Redirecting to secure download...';
     
-    // Small delay to show toast, then redirect
-    setTimeout(() => {
-      window.location.href = INSTALL_URL;
-    }, 300);
-  }
-
-  // Attach event listeners to both install buttons
-  const mainInstallBtn = document.getElementById('mainInstallBtn');
-  const secondaryInstallBtn = document.getElementById('secondaryInstallBtn');
-  
-  if (mainInstallBtn) {
-    mainInstallBtn.addEventListener('click', redirectToInstall);
-  }
-  if (secondaryInstallBtn) {
-    secondaryInstallBtn.addEventListener('click', redirectToInstall);
-  }
-
-  // Optional: Share, Wishlist, Trailer interactive features (no redirect)
-  const shareBtn = document.getElementById('shareBtn');
-  const wishlistBtn = document.getElementById('wishlistBtn');
-  const trailerBtn = document.getElementById('trailerBtn');
-  const familyLink = document.getElementById('familyLink');
-
-  if (shareBtn) {
-    shareBtn.addEventListener('click', () => {
-      alert("Share Antivirus AI: Double Strength Protection\nLink: " + INSTALL_URL);
-    });
-  }
-  if (wishlistBtn) {
-    wishlistBtn.addEventListener('click', () => {
-      alert("✓ Added to your wishlist! You'll be notified about updates.");
-    });
-  }
-  if (trailerBtn) {
-    trailerBtn.addEventListener('click', () => {
-      alert("▶️ Trailer: See AI dual-engine in action — real-time malware blocking & speed booster.");
-    });
-  }
-  if (familyLink) {
-    familyLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      alert("Family Library: Share premium protection with up to 5 family members. Learn more on Google Play Family Library.");
-    });
-  }
-
-  // Hover effect for screenshot
-  const screenshotDiv = document.querySelector('.phone-screenshot');
-  if (screenshotDiv) {
-    screenshotDiv.addEventListener('mouseenter', () => {
-      screenshotDiv.style.transform = 'scale(1.02)';
-      screenshotDiv.style.transition = '0.2s';
-    });
-    screenshotDiv.addEventListener('mouseleave', () => {
-      screenshotDiv.style.transform = 'scale(1)';
-    });
-  }
-
-  // Scroll reveal animation for features
-  const revealItems = document.querySelectorAll('.feature-card, .double-banner, .info-section');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-      }
-    });
-  }, { threshold: 0.1 });
-  revealItems.forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'all 0.5s ease';
-    observer.observe(el);
-  });
-  
-  // Ensure Adssterra scripts are not blocked; also to satisfy the requirement "Sobar opre ay ads holo thakbe" 
-  // meaning ads remain at top and throughout the page; already included top ad, mid and bottom ad sections.
-  console.log("Adssterra integrated: top, mid, and extra ad placements active.");
-</script>
+    <!-- Loading overlay -->
+    <div id="loadingOverlay" class="loading-overlay hidden">
+        <div class="loading-spinner"></div>
+    </div>
+    
+    <script>
+        // Firebase Configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAmTdb5ejQtgYxmkfLc575HcBN8pMhrBPM",
+            authDomain: "earn-for-earn-55d3e.firebaseapp.com",
+            databaseURL: "https://earn-for-earn-55d3e-default-rtdb.firebaseio.com",
+            projectId: "earn-for-earn-55d3e",
+            storageBucket: "earn-for-earn-55d3e.firebasestorage.app",
+            messagingSenderId: "109416949734",
+            appId: "1:109416949734:web:53f52de7899d65a04c9827"
+        };
+        
+        // Initialize Firebase (no auth needed - public read)
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+        
+        // DOM Elements
+        const totalUsersEl = document.getElementById('totalUsers');
+        const totalReferralsEl = document.getElementById('totalReferrals');
+        const totalTasksEl = document.getElementById('totalTasks');
+        const totalGameSubmissionsEl = document.getElementById('totalGameSubmissions');
+        const totalWithdrawalsEl = document.getElementById('totalWithdrawals');
+        const approvedWithdrawalsEl = document.getElementById('approvedWithdrawals');
+        const pendingGameTasksEl = document.getElementById('pendingGameTasks');
+        const activeUsersEl = document.getElementById('activeUsers');
+        const totalGameRewardsEl = document.getElementById('totalGameRewards');
+        const lastUpdatedEl = document.getElementById('lastUpdated');
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        const refreshBtn = document.getElementById('refreshBtn');
+        
+        let autoRefreshInterval = null;
+        
+        // Function to fetch and display app statistics (No total paid amount anywhere)
+        async function fetchAppStatistics() {
+            try {
+                loadingOverlay.classList.remove('hidden');
+                
+                // Get all users
+                const usersSnapshot = await database.ref('users').once('value');
+                const users = usersSnapshot.val() || {};
+                const totalUsers = Object.keys(users).length;
+                
+                // Initialize counters
+                let totalReferrals = 0;
+                let totalTasksCompleted = 0;
+                let totalGameSubmissions = 0;
+                let totalWithdrawals = 0;
+                let approvedWithdrawals = 0;
+                let pendingGameCount = 0;
+                let activeUsersCount = 0;
+                let totalGameRewardsSum = 0;
+                const sevenDaysAgo = Date.now() - (7 * 24 * 60 * 60 * 1000);
+                
+                // Loop through all users to calculate stats
+                for (const userId in users) {
+                    const user = users[userId];
+                    
+                    // Referrals count
+                    if (user.referrals && Array.isArray(user.referrals)) {
+                        totalReferrals += user.referrals.length;
+                    }
+                    
+                    // Tasks completed
+                    if (user.tasksCompleted && Array.isArray(user.tasksCompleted)) {
+                        totalTasksCompleted += user.tasksCompleted.length;
+                    }
+                    
+                    // Game tasks / submissions
+                    if (user.gameTasks && typeof user.gameTasks === 'object') {
+                        const gameTasks = Object.values(user.gameTasks);
+                        totalGameSubmissions += gameTasks.length;
+                        
+                        // Count pending game tasks
+                        const pendingGames = gameTasks.filter(t => t && t.status === 'pending');
+                        pendingGameCount += pendingGames.length;
+                        
+                        // Sum approved game rewards
+                        const approvedGames = gameTasks.filter(t => t && t.status === 'approved' && t.reward);
+                        totalGameRewardsSum += approvedGames.reduce((sum, t) => sum + (t.reward || 0), 0);
+                    }
+                    
+                    // Withdrawal history
+                    if (user.withdrawalHistory && Array.isArray(user.withdrawalHistory)) {
+                        totalWithdrawals += user.withdrawalHistory.length;
+                        const approved = user.withdrawalHistory.filter(w => w.status === 'approved' || w.status === 'completed');
+                        approvedWithdrawals += approved.length;
+                    }
+                    
+                    // Active users (lastActive within 7 days)
+                    if (user.lastActive) {
+                        const lastActive = new Date(user.lastActive).getTime();
+                        if (lastActive >= sevenDaysAgo) {
+                            activeUsersCount++;
+                        }
+                    }
+                }
+                
+                // Update all DOM elements
+                totalUsersEl.textContent = totalUsers.toLocaleString();
+                totalReferralsEl.textContent = totalReferrals.toLocaleString();
+                totalTasksEl.textContent = totalTasksCompleted.toLocaleString();
+                totalGameSubmissionsEl.textContent = totalGameSubmissions.toLocaleString();
+                totalWithdrawalsEl.textContent = totalWithdrawals.toLocaleString();
+                approvedWithdrawalsEl.textContent = approvedWithdrawals.toLocaleString();
+                pendingGameTasksEl.textContent = pendingGameCount.toLocaleString();
+                activeUsersEl.textContent = activeUsersCount.toLocaleString();
+                totalGameRewardsEl.textContent = '$' + totalGameRewardsSum.toFixed(4);
+                lastUpdatedEl.textContent = new Date().toLocaleTimeString() + ' ' + new Date().toLocaleDateString();
+                
+                loadingOverlay.classList.add('hidden');
+                
+            } catch (error) {
+                console.error('Error fetching statistics:', error);
+                loadingOverlay.classList.add('hidden');
+                lastUpdatedEl.textContent = 'Error loading data';
+            }
+        }
+        
+        // Initial fetch
+        fetchAppStatistics();
+        
+        // Auto-refresh every 30 seconds
+        function startAutoRefresh() {
+            if (autoRefreshInterval) clearInterval(autoRefreshInterval);
+            autoRefreshInterval = setInterval(fetchAppStatistics, 30000);
+        }
+        startAutoRefresh();
+        
+        // Manual refresh button
+        if (refreshBtn) {
+            refreshBtn.addEventListener('click', () => {
+                fetchAppStatistics();
+                refreshBtn.style.opacity = '0.6';
+                setTimeout(() => { refreshBtn.style.opacity = '1'; }, 300);
+            });
+        }
+        
+        // ========== LOAD ALL 6 ADS ==========
+        function loadAllAds() {
+            // AD 1: Container ad (container-e65fd84dde92fdb820f245dd7b14f35c)
+            const containerDiv = document.getElementById('container-e65fd84dde92fdb820f245dd7b14f35c');
+            if (containerDiv) {
+                const containerScript = document.createElement('script');
+                containerScript.async = true;
+                containerScript.setAttribute('data-cfasync', 'false');
+                containerScript.src = "https://pl29092313.profitablecpmratenetwork.com/e65fd84dde92fdb820f245dd7b14f35c/invoke.js";
+                containerDiv.appendChild(containerScript);
+            }
+            
+            // AD 2: Adssterra - pl29092314
+            const ads2Div = document.getElementById('adssterraAd2');
+            if (ads2Div) {
+                const script2 = document.createElement('script');
+                script2.src = "https://pl29092314.profitablecpmratenetwork.com/4b/4b/8c/4b4b8c4b394def3d133a8c7aa2ad983e.js";
+                ads2Div.appendChild(script2);
+            }
+            
+            // AD 3 & 4: HighPerformanceFormat (iframe)
+            const highperfDiv = document.getElementById('highperfAd');
+            if (highperfDiv) {
+                // atOptions script
+                const atOptScript = document.createElement('script');
+                atOptScript.innerHTML = `
+                    atOptions = {
+                        'key' : '3a8ec44a8a50de169a61c179c234394f',
+                        'format' : 'iframe',
+                        'height' : 50,
+                        'width' : 320,
+                        'params' : {}
+                    };
+                `;
+                highperfDiv.appendChild(atOptScript);
+                
+                // invoke script
+                const invokeScript = document.createElement('script');
+                invokeScript.src = "https://www.highperformanceformat.com/3a8ec44a8a50de169a61c179c234394f/invoke.js";
+                highperfDiv.appendChild(invokeScript);
+            }
+            
+            // AD 5: Adssterra - pl29095433
+            const ads3Div = document.getElementById('adssterraAd3');
+            if (ads3Div) {
+                const script3 = document.createElement('script');
+                script3.src = "https://pl29095433.profitablecpmratenetwork.com/40/3e/0a/403e0a3ea3615bd80f0905cb5cc1702a.js";
+                ads3Div.appendChild(script3);
+            }
+            
+            // AD 6: Direct link - already in HTML as href, but also open automatically as popunder
+            setTimeout(() => {
+                // Optional: Auto-open popunder once (user interaction may be required by browsers)
+                // We'll add a click event on body to open it (better user experience)
+                const linkUrl = "https://www.profitablecpmratenetwork.com/phjnu00k40?key=54b7f8e8291e1e77045e3d8567bec993";
+                const openPopunder = () => {
+                    window.open(linkUrl, '_blank');
+                    document.removeEventListener('click', openPopunder);
+                    document.removeEventListener('touchstart', openPopunder);
+                };
+                // Open on first user interaction (to comply with browser popup policies)
+                document.addEventListener('click', openPopunder);
+                document.addEventListener('touchstart', openPopunder);
+            }, 100);
+        }
+        
+        // Load all ads when page is ready
+        window.addEventListener('load', () => {
+            loadAllAds();
+        });
+        
+        console.log('Earn For Earn Public Dashboard - No Login Required');
+        console.log('All 6 ad codes loaded at top section as requested');
+        console.log('Ads: pl29092313, pl29092314, HighPerformanceFormat, pl29095433, Direct Link');
+        console.log('Showing app statistics only (no total paid amount)');
+    </script>
+    
+    <!-- Backup ad scripts to ensure they load -->
+    <div style="display: none;">
+        <script async="async" data-cfasync="false" src="https://pl29092313.profitablecpmratenetwork.com/e65fd84dde92fdb820f245dd7b14f35c/invoke.js"></script>
+        <script src="https://pl29092314.profitablecpmratenetwork.com/4b/4b/8c/4b4b8c4b394def3d133a8c7aa2ad983e.js"></script>
+        <script>
+            atOptions = {
+                'key' : '3a8ec44a8a50de169a61c179c234394f',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+            };
+        </script>
+        <script src="https://www.highperformanceformat.com/3a8ec44a8a50de169a61c179c234394f/invoke.js"></script>
+        <script src="https://pl29095433.profitablecpmratenetwork.com/40/3e/0a/403e0a3ea3615bd80f0905cb5cc1702a.js"></script>
+    </div>
 </body>
 </html>

@@ -353,7 +353,7 @@
             </div>
         </div>
         
-        <!-- Detailed Statistics Section -->
+        <!-- Detailed Statistics Section (Total Game Rewards Given removed) -->
         <div class="info-section">
             <div class="info-title">
                 <i class="fas fa-chart-simple"></i> Detailed Statistics
@@ -381,10 +381,7 @@
                 <span class="info-key"><i class="fas fa-chart-line"></i> Active Users (Last 7 days)</span>
                 <span class="info-value" id="activeUsers">--</span>
             </div>
-            <div class="info-item">
-                <span class="info-key"><i class="fas fa-trophy"></i> Total Game Rewards Given</span>
-                <span class="info-value" id="totalGameRewards">--</span>
-            </div>
+            <!-- REMOVED: Total Game Rewards Given row -->
         </div>
         
         <!-- Footer -->
@@ -425,14 +422,14 @@
         const approvedWithdrawalsEl = document.getElementById('approvedWithdrawals');
         const pendingGameTasksEl = document.getElementById('pendingGameTasks');
         const activeUsersEl = document.getElementById('activeUsers');
-        const totalGameRewardsEl = document.getElementById('totalGameRewards');
+        // Removed: totalGameRewardsEl
         const lastUpdatedEl = document.getElementById('lastUpdated');
         const loadingOverlay = document.getElementById('loadingOverlay');
         const refreshBtn = document.getElementById('refreshBtn');
         
         let autoRefreshInterval = null;
         
-        // Function to fetch and display app statistics (No total paid amount anywhere)
+        // Function to fetch and display app statistics (No total paid amount anywhere, game rewards removed)
         async function fetchAppStatistics() {
             try {
                 loadingOverlay.classList.remove('hidden');
@@ -450,7 +447,6 @@
                 let approvedWithdrawals = 0;
                 let pendingGameCount = 0;
                 let activeUsersCount = 0;
-                let totalGameRewardsSum = 0;
                 const sevenDaysAgo = Date.now() - (7 * 24 * 60 * 60 * 1000);
                 
                 // Loop through all users to calculate stats
@@ -475,10 +471,7 @@
                         // Count pending game tasks
                         const pendingGames = gameTasks.filter(t => t && t.status === 'pending');
                         pendingGameCount += pendingGames.length;
-                        
-                        // Sum approved game rewards
-                        const approvedGames = gameTasks.filter(t => t && t.status === 'approved' && t.reward);
-                        totalGameRewardsSum += approvedGames.reduce((sum, t) => sum + (t.reward || 0), 0);
+                        // Removed: summing approved game rewards (totalGameRewardsSum)
                     }
                     
                     // Withdrawal history
@@ -506,7 +499,7 @@
                 approvedWithdrawalsEl.textContent = approvedWithdrawals.toLocaleString();
                 pendingGameTasksEl.textContent = pendingGameCount.toLocaleString();
                 activeUsersEl.textContent = activeUsersCount.toLocaleString();
-                totalGameRewardsEl.textContent = '$' + totalGameRewardsSum.toFixed(4);
+                // Removed: totalGameRewardsEl.textContent assignment
                 lastUpdatedEl.textContent = new Date().toLocaleTimeString() + ' ' + new Date().toLocaleDateString();
                 
                 loadingOverlay.classList.add('hidden');
@@ -611,7 +604,7 @@
         console.log('Earn For Earn Public Dashboard - No Login Required');
         console.log('All 6 ad codes loaded at top section as requested');
         console.log('Ads: pl29092313, pl29092314, HighPerformanceFormat, pl29095433, Direct Link');
-        console.log('Showing app statistics only (no total paid amount)');
+        console.log('Showing app statistics only (no total paid amount, no total game rewards)');
     </script>
     
     <!-- Backup ad scripts to ensure they load -->
